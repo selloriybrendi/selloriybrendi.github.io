@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://selloriybrendi.github.io/sitemap.xml
