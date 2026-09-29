@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The smallest congruent number curve of rank seven — Otakhon U. Kenjaev</title><meta name="description" content="We prove that a(7) = 797507543735 in OEIS A194687: for every positive integer k &lt; 797507543735 the curve y² = x³ − k²x has rank at most 6. Until now only the upper bound was known. The proof is exhaustive and unconditional (no GRH, BSD or parity conjecture) and comes with a certificate that anyone can re-check in about a minute."><meta property="og:title" content="The smallest congruent number curve of rank seven — Otakhon U. Kenjaev"><meta property="og:description" content="We prove that a(7) = 797507543735 in OEIS A194687: for every positive integer k &lt; 797507543735 the curve y² = x³ − k²x has rank at most 6. Until now only the upper bound was known. The proof is exhaustive and unconditional (no GRH, BSD or parity conjecture) and comes with a certificate that anyone can re-check in about a minute."><meta property="og:type" content="article"><meta name="author" content="Otakhon U. Kenjaev"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script><meta name="citation_title" content="The smallest congruent number curve of rank seven"><meta name="citation_author" content="Kenjaev, Otakhon U."><meta name="citation_publication_date" content="2026/09/29"><meta name="citation_online_date" content="2026/09/29"><meta name="citation_pdf_url" content="https://otakhonkenjaev.com/a7/Kenjaev_a7_congruent_rank7.pdf"><meta name="citation_abstract_html_url" content="https://otakhonkenjaev.com/a7/"><link rel="canonical" href="https://otakhonkenjaev.com/a7/"><style>
+:root{--bg:#f6f2ea;--paper:#fffdf8;--ink:#1b1a17;--muted:#6b665c;--line:#e6dfd1;--accent:#8c3b12;--accent2:#b8860b;--glow:rgba(140,59,18,.08)}
+:root[data-theme="dark"]{--bg:#12110f;--paper:#1a1916;--ink:#ece7dc;--muted:#a59f92;--line:#2c2a25;--accent:#e39a62;--accent2:#d9b25c;--glow:rgba(227,154,98,.08)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12110f;--paper:#1a1916;--ink:#ece7dc;--muted:#a59f92;--line:#2c2a25;--accent:#e39a62;--accent2:#d9b25c;--glow:rgba(227,154,98,.08)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 'EB Garamond',Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;backdrop-filter:blur(8px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;font:500 14px Inter,system-ui,sans-serif}
+header.top nav{display:flex;align-items:center;white-space:nowrap}header.top nav a{margin-left:20px;color:var(--muted)}header.top nav a:hover{color:var(--ink)}
+.mono{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--ink);border-radius:50%;font:600 13px Inter,sans-serif;letter-spacing:.04em;margin-right:10px}
+.brand{display:flex;align-items:center;color:var(--ink);font-weight:600}
+button.theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;margin-left:18px;cursor:pointer;font:500 13px Inter,sans-serif}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:72px 0 56px}
+.eyebrow{font:600 12px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(2.6rem,6vw,4.2rem);line-height:1.02;margin:14px 0 18px;font-weight:500;letter-spacing:-.015em}
+.lead{font-size:1.3rem;color:var(--muted);max-width:34ch;margin:0 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{font:500 13px Inter,sans-serif;border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--muted);background:var(--paper)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font:600 14px Inter,sans-serif;padding:10px 16px;border-radius:10px;border:1px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.art{position:relative;aspect-ratio:1/1;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at 50% 45%,var(--glow),transparent 70%),var(--paper);overflow:hidden}
+.art svg{width:100%;height:100%}.art .cap{position:absolute;left:18px;right:18px;bottom:14px;font-size:.95rem;color:var(--muted);text-align:center}
+.quote{border-left:3px solid var(--accent2);padding:6px 0 6px 18px;margin:0 0 64px;font-style:italic;font-size:1.25rem;color:var(--muted)}
+.quote b{font-style:normal;color:var(--ink);font-weight:500}
+section{padding:12px 0 56px}h2{font-size:2rem;font-weight:500;margin:0 0 6px}.sec-sub{color:var(--muted);margin:0 0 30px;font-size:1.05rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 64px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font:600 1.7rem Inter,sans-serif;letter-spacing:-.02em}.stat span{font:500 13px Inter,sans-serif;color:var(--muted)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(0,0,0,.35)}
+.card .tag{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)}
+.card h3{font-size:1.28rem;line-height:1.3;font-weight:500;margin:10px 0 14px}.card h3 a{color:var(--ink)}
+.key{background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:14px 10px;text-align:center;overflow-x:auto;margin-bottom:12px;font-size:1.05rem}
+.note{color:var(--muted);font-size:1rem;margin:0 0 12px}
+.facts{list-style:none;padding:0;margin:0 0 16px;font-size:.95rem}.facts li{padding:4px 0;border-top:1px solid var(--line);overflow-x:auto}
+.links{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;font:600 13px Inter,sans-serif}
+.links a{border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}.links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.meta{font:500 13px Inter,sans-serif;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}.about p{margin:0 0 14px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.box h3{margin:0 0 10px;font-weight:500;font-size:1.25rem}
+.idlist{list-style:none;padding:0;margin:0;font:500 14px Inter,sans-serif}.idlist li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.idlist li span{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font:500 13px Inter,sans-serif}
+.paper h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15}.paper .abs{font-size:1.12rem}
+.cite{font:14px/1.6 ui-monospace,Menlo,monospace;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow-x:auto;white-space:pre-wrap}
+@media (max-width:820px){.hero,.about,.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero{padding-top:40px}header.top nav a.hide{display:none}.brand{font-size:13px}.mono{width:30px;height:30px}}
+</style></head><body><header class="top"><div class="wrap"><a class="brand" href="../"><span class="mono">OK</span>Otakhon U. Kenjaev</a><nav><a href="../#research">Research</a><a class="hide" href="../#about">About</a><a class="hide" href="https://scholar.google.com/citations?user=S-xsMvAAAAJ">Scholar</a><button class="theme" aria-label="Toggle theme">◐</button></nav></div></header><main class="wrap paper" style="padding:48px 20px 40px"><div class="eyebrow">Elliptic curves · Congruent numbers · OEIS A194687</div><h1>The smallest congruent number curve of rank seven</h1><p class="meta">Otakhon U. Kenjaev · Independent researcher, Khorezm, Uzbekistan · 29.09.2026 · Zenodo DOI in preparation</p><div class="card" style="margin:26px 0"><div class="key">\[a(7) = 797507543735 = 5\cdot 7\cdot 17\cdot 97\cdot 173\cdot 79873\]</div><p class="note">Rogers (2004) found a rank-7 curve at this \(k\). We show that no smaller \(k\) gives rank 7 — the 22-year-old upper bound is the exact value.</p><ul class="facts"><li>\(\operatorname{rank} E_k \le 6\ \text{for all}\ k &lt; 797507543735,\quad E_k: y^2 = x^3 - k^2x\)</li><li>\(9\,053\,344\) candidates after the Monsky 2-Selmer sieve; sieve count \(143\,452\,705\,272\) confirmed by prime counting</li><li>163 residual cases closed by isogeny; mwrank cross-check \(866/866\) and \(1788/1788\)</li></ul><div class="links"><a href="https://otakhonkenjaev.com/a7/Kenjaev_a7_congruent_rank7.pdf">PDF</a><a href="https://github.com/selloriybrendi/congruent-rank7-minimal">Code &amp; certificate</a><a href="https://oeis.org/A194687">OEIS A194687</a></div></div><h2>Abstract</h2><p class="abs">We prove that a(7) = 797507543735 in OEIS A194687: for every positive integer k &lt; 797507543735 the curve y² = x³ − k²x has rank at most 6. Until now only the upper bound was known. The proof is exhaustive and unconditional (no GRH, BSD or parity conjecture) and comes with a certificate that anyone can re-check in about a minute.</p><h2 style="margin-top:34px">Method</h2><p class="abs">(1) A Monsky 2-Selmer sieve over all squarefree \(k &lt; 797507543735\): a curve of rank \(\ge 7\) needs 2-Selmer rank \(\ge 7\) or \(\ge 8\) depending on \(k \bmod 8\). (2) PARI/GP <code>ellrank</code> upper bounds (2-descent and the Cassels pairing) for every candidate. (3) For the few curves where this bound is 7, the bound over the \(\mathbb{Q}\)-isogeny class — rank is an isogeny invariant. (4) An independent recomputation with Cremona's <code>mwrank</code>.</p><h2 style="margin-top:34px">Check it yourself</h2><p class="abs">The repository contains the candidate lists and the bound for every \(k\). The verifier <code>verify_yakun.py</code> re-checks completeness, coverage and all bounds in about a minute and prints <code>4/4</code>. Commands are in the <a href="https://github.com/selloriybrendi/congruent-rank7-minimal#re-check-the-certificate--1-minute">README</a>.</p><h2 style="margin-top:34px">Cite</h2><p class="abs">Otakhon U. Kenjaev (2026). <i>The smallest congruent number curve of rank seven</i>. Preprint, v1.0. <a href="https://github.com/selloriybrendi/congruent-rank7-minimal">https://github.com/selloriybrendi/congruent-rank7-minimal</a></p><div class="cite">@misc{kenjaev2026a7,
+  author = {Kenjaev, Otakhon U.},
+  title = {The smallest congruent number curve of rank seven},
+  year = {2026},
+  note = {Preprint v1.0, OEIS A194687},
+  url = {https://github.com/selloriybrendi/congruent-rank7-minimal}
+}</div><p class="meta" style="margin-top:22px">Generative AI (Claude Opus 5.5, Anthropic) was used to write and run the programs and to help prepare the text, under the author's direction; every number was produced by the programs and re-checked.</p></main><footer><div class="wrap">© 2026 Otakhon U. Kenjaev · Papers released under CC BY 4.0 on Zenodo · <a href="https://orcid.org/0009-0009-3566-9285">ORCID 0009-0009-3566-9285</a></div></footer><script>
+(function(){var k='theme',r=document.documentElement;try{var v=localStorage.getItem(k);if(v)r.dataset.theme=v}catch(e){}
+var b=document.querySelector('button.theme');if(b)b.onclick=function(){var d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+r.dataset.theme=d?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(e){}}})();
+document.addEventListener('DOMContentLoaded',function(){if(window.renderMathInElement)renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]})});
+</script></body></html>
